@@ -28,10 +28,12 @@ function generateSVG(text, textColor, shape, shapeColor) {
   }
 
   fs.writeFile('logo.svg', svgContent, (err) => {
-    if (err) {
-      console.error('Error creating logo.svg:', err);
-    } else {
-      console.log('Generated logo.svg');
+    switch (err) {
+      case null:
+        console.log('Generated logo.svg');
+        break;
+      default:
+        console.error('Error creating logo.svg:', err);
     }
   });
 }
