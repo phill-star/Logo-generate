@@ -27,13 +27,13 @@ function generateSVG(text, textColor, shape, shapeColor) {
       return;
   }
 
-  fs.writeFile('logo.svg', svgContent, (err) => {
+  fs.writeFile(`${shape}.svg`, svgContent, (err) => {
     switch (err) {
       case null:
-        console.log('Generated logo.svg');
+        console.log(`Generated ${shape}.svg`);
         break;
       default:
-        console.error('Error creating logo.svg:', err);
+        console.error(`Error creating ${shape}.svg:`, err);
     }
   });
 }
