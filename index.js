@@ -1,23 +1,13 @@
-const fs = require('fs');
+const { generateSVG, promptUser } = require('./shape');
 
-function generateSVG(text, textColor, shape, shapeColor) {
-  let svgContent;
+async function main() {
+  const text = await promptUser('Enter up to three characters: ');
+  const textColor = await promptUser('Enter the text color: ');
+  const shapeOptions = ['circle', 'triangle', 'square'];
+  const shape = await promptUser(`Choose a shape (${shapeOptions.join(', ')}): `);
+  const shapeColor = await promptUser('Enter the shape color: ');
 
-  
+  generateSVG(text, textColor, shape, shapeColor);
 }
 
-function promptUser(prompt) {
-  const readline = require('readline');
-  const rl = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout
-  });
-
-  return new Promise((resolve) => {
-    rl.question(prompt, (answer) => {
-      rl.close();
-      resolve(answer);
-    });
-  });
-}
-
+main();
