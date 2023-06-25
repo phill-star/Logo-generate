@@ -1,4 +1,4 @@
-const { generateSVG, promptUser } = require('./shape');
+const { generateSVG, promptUser } = require('./lib/shape');
 
 async function main() {
   const text = await promptUser('Enter up to three characters: ');
