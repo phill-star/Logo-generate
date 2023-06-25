@@ -1,0 +1,22 @@
+{
+  "name": "logo-generate",
+  "version": "0.1.0",
+  "description": "generate logo",
+  "main": "index.js",
+  "scripts": {
+    "test": "test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phill-star/logo-generate.git"
+  },
+  "author": "mohamed",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/phill-star/logo-generate/issues"
+  },
+  "homepage": "https://github.com/phill-star/logo-generate#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
