@@ -12,7 +12,7 @@ Based on the user input it should generate a html page with logo desired.
 The user will have to open it in a live or default browser they use to see the generated logo
 
 
-link to video..![Uploading Screenshot 2023-09-02 at 7.27.07 AM.png…]()
+link to video..<img width="1512" alt="Screenshot 2023-09-02 at 7 27 07 AM" src="https://github.com/phill-star/logo-generate/assets/130422301/1b8a2cc4-9ba4-42b3-bdc6-1eff76bd78eb">
 
 
 https://drive.google.com/file/d/1-4-edjiMrmYXrtySnb74SuKH6WGHLY4G/view
